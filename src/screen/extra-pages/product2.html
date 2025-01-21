@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits || Fresh Juices ( Product-2 )</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- For Header  -->
+    <link rel="stylesheet" href="../../assets/css/slicknav.min.css" />
+    <!-- /For Header  -->
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style2.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+
+    <!-- testimonial css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/testimonial.css" />
+
+    <!-- For Include HTML Page  -->
+    <script src="../../assets/js/dynamic_load.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <!-- Header Section  -->
+    <div data-include="../../components/_header_2.html"></div>
+    <!-- Main Content  -->
+    <div
+      class="custom-container d-flex justify-content-center align-items-center"
+    >
+      <div class="product2-info-card position-relative">
+        <div>
+          <h5 class="product2-info-title">
+            THE FRUITS OF THE WORLD<br />W86th Street, Madrid, Spain
+          </h5>
+          <a href="#" class="product2-info-links text-decoration-underline"
+            >View map</a
+          >
+          <span class="text-muted mx-2"> . </span>
+          <a href="#" class="product2-info-links text-decoration-underline"
+            >Store information</a
+          >
+        </div>
+
+        <div>
+          <p class="product2-info-timing">
+            Pickup available until 8:30 pm<br />
+            <br /><span class="text-color">It is currently 8:00 pm</span>
+          </p>
+        </div>
+
+        <img
+          src="../../assets/icons/heart.png"
+          alt="Heart Icon"
+          class="product2-info-heart"
+          width="40"
+        />
+
+        <div class="product2-info-buttons d-flex justify-content-end">
+          <div class="row row-gap-3">
+            <div class="col-sm-6">
+              <a href="#">
+                <button
+                  class="btn me-4 invite-others"
+                  data-bs-toggle="modal"
+                  data-bs-target="#inviteOthersModal"
+                >
+                  Invite others &rarr;
+                </button>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/src/screen/checkout/group_order.html">
+                <button class="btn">Start Group Order &rarr;</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- view  full menu  -->
+    <div class="custom-container mt-4 d-none d-lg-block">
+      <div class="d-flex align-items-center">
+        <span class="view-full-menu-text me-3">View full menu</span>
+        <label class="view-full-menu-switch">
+          <input type="checkbox" />
+          <span class="view-full-menu-slider"></span>
+        </label>
+
+        <!-- searchbar  -->
+        <div class="top-header">
+          <div class="search-box" style="width: 340px !important">
+            <input type="text" class="form-control" placeholder="Search here" />
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+
+        <!-- <input
+          type="text"
+          class="form-control ms-3 view-full-menu-search"
+          placeholder="Search here"
+          aria-label="Search"
+        /> -->
+      </div>
+    </div>
+
+    <!-- Tab Area Start -->
+    <div class="row d-none d-lg-block">
+      <nav
+        class="navbar navbar-expand-lg navbar-custom-tab custom-container d-flex align-items-center justify-content-center"
+      >
+        <div class="ms-3">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-tab">
+              <li class="nav-item">
+                <a class="nav-link-father active">Fresh Juices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">Juice Farmacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">Smoothies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">Açaí Bowls</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">Bottled +</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">SuperFoods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">Juiced Gelato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-father">More +</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- / Tab Area  End-->
+    <!-- Fresh Juices Products  -->
+    <div class="custom-container py-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="product2-fresh-juices-title">
+          Fresh Juices
+          <span class="product2-fresh-juices-subtitle">( 1-4 of 24 )</span>
+        </h2>
+
+        <a href="#" class="product2-fresh-juices-view-all"
+          ><button class="load-more-btn">View All</button></a
+        >
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mb-4">
+          <div class="product2-fresh-juices-item">
+            <img
+              src="../../assets/images/order-ahead/welcome-img.png"
+              alt="Hail to Kale"
+            />
+            <h3 class="product2-fresh-juices-item-title mt-2">Hail to Kale</h3>
+            <p class="product2-fresh-juices-item-description">
+              Kale, Watermelon, Green apple
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Invite other Modal  -->
+
+    <div
+      class="modal fade invite-others-modal"
+      id="inviteOthersModal"
+      tabindex="-1"
+      aria-labelledby="inviteOthersModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="inviteOthersModalLabel">
+              <i class="fa fa-users" aria-hidden="true"></i> &nbsp;Invite Others
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-start">
+              Order for yourself and add others onto your tab by sharing this QR
+              code.
+            </p>
+            <img
+              src="../../assets/images/qr-code.png"
+              alt="QR Code"
+              class="qr-code"
+            />
+            <button class="btn btn-share-link">
+              <i class="fa fa-location-arrow" aria-hidden="true"></i> &nbsp;
+              Share Link
+            </button>
+            <div class="copy-link">
+              <a href="#" class="text-decoration-underline">Copy link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Invite other Modal  -->
+    <!-- /Main Content  -->
+
+    <!-- Script  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <!-- Header Menu  -->
+    <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../../assets/js/jquery.slicknav.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <!-- testimonial  js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+    <script src="../../assets/js/testimonial.js"></script>
+
+    <!-- Video in Hero Area  -->
+    <script src="../../assets/js/video_hero_area.js"></script>
+
+    <!-- Modal js -->
+  </body>
+</html>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fruit of The World</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- For Header  -->
+    <link rel="stylesheet" href="../../assets/css/slicknav.min.css" />
+    <!-- /For Header  -->
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+
+    <!-- testimonial css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/testimonial.css" />
+
+    <!-- For Include HTML Page  -->
+    <script src="../../assets/js/dynamic_load.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <!-- Header Section  -->
+    <!-- <div data-include="../../components/_header.html"></div> -->
+    <section>
+      <headers>
+        <!-- Top Header -->
+        <div class="top-header">
+          <div class="logo-title">
+            <a href="/src/screen/home/index.html">
+              <img src="../../assets/logo/logo.png" alt="Logo" class="logo" />
+            </a>
+            <span class="title">THE FRUITS OF THE WORLD</span>
+          </div>
+          <div class="search-box d-none d-xl-inline">
+            <input type="text" class="form-control" placeholder="Search here" />
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+            <span class="same-day-delivery"
+              ><a href="/src/screen/checkout/same_day_delivery.html"
+                >Same day delivery</a
+              ></span
+            >
+          </div>
+          <div class="header-icons d-none d-md-inline">
+            <span class="d-xl-none search-switch"
+              ><i class="fas fa-search"></i
+            ></span>
+            <span><i class="fas fa-globe"></i> ENG</span>
+            <span class="d-md-none"><i class="fas fa-heart"></i> </span>
+            <span id="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+            <span
+              ><a href="/src/screen/auth/login.html"
+                ><i class="fa-regular fa-user"></i></a
+            ></span>
+            <a href="/src/screen/order-ahead/order_ahead.html">
+              <button class="button d-none d-xl-inline">Order Ahead</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Header -->
+        <!-- Offcanvas Menu Begin -->
+        <div class="offcanvas-menu-overlay"></div>
+        <div class="offcanvas-menu-wrapper" style="top: 0px">
+          <div class="offcanvas__option">
+            <div class="offcanvas__links">
+              <a href="/src/screen/auth/login.html">Sign in</a>
+              <a href="#">FAQs</a>
+              <a href="#">Terms</a>
+            </div>
+            <!-- <div class="offcanvas__top__hover">
+        <span>Usd <i class="arrow_carrot-down"></i></span>
+        <ul>
+          <li>USD</li>
+          <li>EUR</li>
+          <li>USD</li>
+        </ul>
+      </div> -->
+          </div>
+          <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"
+              ><img src="../../assets/icons/search.png" alt=""
+            /></a>
+            <a href="#"><img src="../../assets/icons/heart.png" alt="" /></a>
+            <a href="#"
+              ><img src="../../assets/icons/cart.png" alt="" /> <span></span
+            ></a>
+          </div>
+          <div id="mobile-menu-wrap"></div>
+        </div>
+        <!-- Offcanvas Menu End -->
+
+        <!-- Header Section Begin -->
+        <header class="header mt-3">
+          <div class="custom-container py-2 py-md-0">
+            <div class="row d-flex align-items-center justify-content-between">
+              <!-- <div class="col-lg-3 col-md-3">
+          <div class="header__logo">
+            <a href="./index.html"
+              ><img src="../assets/logo/footer-logo.png" alt=""
+            /></a>
+          </div>
+        </div> -->
+              <div class="col-lg-7 col-md-8 d-flex start-0 align-items-center">
+                <nav class="header__menu mobile-menu">
+                  <ul>
+                    <li class="active nav-item">
+                      <a href="#" class="nav-link">Company</a>
+                      <ul class="dropdown">
+                        <li>
+                          <a href="/src/screen/company/company.html"
+                            >About Us</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/src/screen/ingredients/ingredients.html"
+                            >Our Ingredients</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/src/screen/sustainability/sustainability.html"
+                            >Sustainability</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/src/screen/growing-it-back/growing-it-back.html"
+                            >Growing It Back</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/src/screen/career/career.html">Careers</a>
+                        </li>
+                        <li>
+                          <a href="/src/screen/blog/blog.html">Our blog</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        href="/src/screen/products/products.html"
+                        class="nav-link"
+                        >Products</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Shop</a>
+                      <ul class="dropdown" style="width: 1000px !important">
+                        <li>
+                          <!-- Shop Dropdown2 menu  -->
+
+                          <div id="dropdown-menu2-section">
+                            <div class="row justify-content-center text-center">
+                              <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="dropdown-menu2">
+                                  <a href="#">
+                                    <img
+                                      src="../../assets/images/header/cooler.png"
+                                      alt="Activated Nutrition"
+                                    />
+                                    <div class="dropdown-menu2-title">
+                                      Cooler Cleanse
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="dropdown-menu2">
+                                  <a href="/src/screen/shop/shop1.html">
+                                    <img
+                                      src="../../assets/images/header/Activated.png"
+                                      alt="Activated Nutrition"
+                                    />
+                                    <div class="dropdown-menu2-title">
+                                      Activated Nutrition
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="dropdown-menu2">
+                                  <a href="/src/screen/shop/shop3.html">
+                                    <img
+                                      src="../../assets/images/header/Juiced.png"
+                                      alt="Juiced Gelato"
+                                    />
+                                    <div class="dropdown-menu2-title">
+                                      Juiced Gelato
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="dropdown-menu2">
+                                  <a href="/src/screen/products/product.html">
+                                    <img
+                                      src="../../assets/images/header/BOOK.png"
+                                      alt="The Book"
+                                    />
+                                    <div class="dropdown-menu2-title">
+                                      THE BOOK
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- /Shop Dropdown2 menu  -->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/src/screen/menu/menu.html" class="nav-link"
+                        >Menu</a
+                      >
+                      <ul class="dropdown">
+                        <li>
+                          <a href="/src/screen/extra-pages/product2.html"
+                            >Fresh Juices</a
+                          >
+                        </li>
+                        <li><a href="#">Juice Farmacy</a></li>
+                        <li><a href="#">Smoothies</a></li>
+                        <li><a href="#">Açaí Bowls</a></li>
+                        <li><a href="#">Bottled +</a></li>
+                        <li><a href="#">SuperFoods</a></li>
+                        <li><a href="#">Juiced Gelato</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        href="/src/screen/location/location.html"
+                        class="nav-link"
+                        >Locations</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="/src/screen/contact/contact.html"
+                        class="nav-link"
+                        >Contact us</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <div class="customer-service">
+                  Customer Service<br /><span>
+                    <b><a href="tel:+01234566778">+01234566778</a></b>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col-lg-2 col-md-1 d-flex justify-content-end align-items-end"
+              >
+                <div class="my-list d-none d-md-inline">
+                  <a href="#">
+                    <img src="../../assets/icons/heart.png" alt="" srcset=""
+                  /></a>
+                  <!-- <i class="fa fa-heart-o"></i> -->
+                  <span class="d-none d-xl-inline">My List</span>
+                </div>
+              </div>
+            </div>
+            <div class="canvas__open mt-2"><i class="fa fa-bars"></i></div>
+          </div>
+        </header>
+        <!-- Header Section End -->
+      </headers>
+
+      <!-- Search Begin -->
+      <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+          <div class="search-close-switch">+</div>
+          <form class="search-model-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search here....."
+            />
+          </form>
+        </div>
+      </div>
+      <!-- Search End -->
+
+      <!-- Cart  -->
+      <div id="cart-widget" class="cart-widget" style="display: none">
+        <!-- Cart Header -->
+        <div class="cart-header">
+          <h4>Your Order (1)</h4>
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="cart-body">
+          <!-- Cart Item -->
+          <div class="row cart-item gap-3">
+            <div class="col-5 item-details">
+              <h5>Hail to Kale</h5>
+
+              <p class="mt-2">12 Oz<br />Remove Lemon<br />+3 more choices</p>
+            </div>
+            <!-- <div class="item-price"> -->
+            <div class="col-4 custom-button">
+              <!-- <div class="icon">
+                <i class="fas fa-trash-alt"></i>
+              </div> -->
+              <button
+                class="plus-button p-1 px-2"
+                onclick="decreaseQuantity(this)"
+              >
+                <i class="fas fa-minus"></i>
+              </button>
+
+              <input
+                type="text"
+                class="quantity-input form-control"
+                value="1"
+                min="1"
+              />
+              <button
+                class="plus-button p-1 px-2"
+                onclick="increaseQuantity(this)"
+              >
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+
+            <div class="col-3 d-flex justify-content-end align-items-end">
+              <button class="btn button p-1 px-2">
+                8,95 €
+                <span class="text-danger ps-1" style="font-size: 16px">X</span>
+              </button>
+            </div>
+
+            <!-- </div> -->
+          </div>
+
+          <!-- Suggest Section -->
+          <div class="suggest-section">
+            <h6>We may suggest you</h6>
+            <div class="row mt-3">
+              <div class="col-6 col-md-4">
+                <div
+                  data-include="../../components/_suggested_product_cart.html"
+                ></div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  data-include="../../components/_suggested_product_cart.html"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Section -->
+          <div class="summary-section">
+            <div>
+              <p>Sub Total</p>
+              <p>Tax</p>
+            </div>
+            <div class="text-end">
+              <a href="#">
+                <button class="btn checkout-btn p-1">8,95 €</button>
+              </a>
+              <a href="#">
+                <button class="btn checkout-btn p-1">0 €</button>
+              </a>
+
+              <!-- <button>0 €</button> -->
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <button class="checkout-btn py-1">Checkout (8,95 €) &rarr;</button>
+          <button class="add-product-btn py-1">Add more product &rarr;</button>
+        </div>
+      </div>
+      <!-- /Cart  -->
+    </section>
+    <!-- /Header Section  -->
+
+    <!-- ###################  -->
+    <!-- Hero area  -->
+    <div class="hero-section">
+      <!-- Video Background -->
+      <video class="hero-video" autoplay muted loop>
+        <source src="../../assets/video/fruits-video.mp4" type="video/mp4" />
+        <!-- <source
+          src="https://www.juicegeneration.com/media/wysiwyg/hero-section/DESKTOP-FINAL_ALT_2-220817_JG_16x9.mp4"
+          type="video/mp4"
+        /> -->
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-content center-text">
+        <h1>DRINK YOUR<br />PROTINE</h1>
+        <button class="btn button">Shop Now</button>
+      </div>
+
+      <!-- Sound Icon -->
+      <div class="sound-icon">
+        <i id="sound-toggle" class="fas fa-volume-mute"></i>
+      </div>
+    </div>
+
+    <!-- promo section -->
+    <div data-include="./components/_promo.html"></div>
+
+    <!-- Offer sections  -->
+    <div data-include="./components/_offer_cart.html"></div>
+
+    <!-- Christmas -->
+    <div data-include="./components/_christmas.html"></div>
+
+    <!-- Seasonal Offers  -->
+
+    <div class="custom-container py-5">
+      <h2 class="text-center mb-4">Seasonal Offers & Products</h2>
+      <div class="row row-gap-4">
+        <!-- Product Card -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart2.html"></div>
+        </div>
+
+        <!-- Another Product Cards -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart.html"></div>
+        </div>
+
+        <!-- Duplicate Product Cards -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart3.html"></div>
+        </div>
+        <!-- Duplicate Product Cards -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart.html"></div>
+        </div>
+        <!-- Product Card -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart2.html"></div>
+        </div>
+
+        <!-- Another Product Cards -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart.html"></div>
+        </div>
+
+        <!-- Duplicate Product Cards -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart3.html"></div>
+        </div>
+        <!-- Duplicate Product Cards -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_product_cart.html"></div>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </div>
+    <hr />
+
+    <!-- Shop by Categories -->
+    <div class="custom-container py-5">
+      <h2 class="mb-4">Shop by Categories</h2>
+      <hr />
+      <div class="row row-gap-5">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div data-include="../../components/_category_cart.html"></div>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Notice with Marquee  -->
+    <div class="widget block block-static-block">
+      <div
+        data-content-type="html"
+        data-appearance="default"
+        data-element="main"
+        data-decoded="true"
+      >
+        <section class="marquee-line marquee-line--green">
+          <div class="marquee-line__wrapper">
+            <marquee behavior="" direction="">
+              <ul class="marquee-line__list pt-3">
+                <li>We prepare it for you. you enjoy it</li>
+                <li>We prepare it for you. you enjoy it</li>
+                <li>We prepare it for you. you enjoy it</li>
+                <li>We prepare it for you. you enjoy it</li>
+              </ul>
+            </marquee>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Slogan-0 -->
+    <div class="slogan overflow-hidden">
+      <div class="row align-items-center">
+        <!-- Left Section: Image -->
+        <div class="col-lg-6 text-center text-lg-start salgon-img">
+          <img
+            src="../../assets/images/home/salgon.png"
+            alt="Woman Image"
+            class="img-fluid"
+          />
+        </div>
+
+        <!-- Right Section: Text and Cards -->
+        <div class="col-lg-6 justify-content-center" align="middle">
+          <h2 class="mb-3 pt-5">DRINK YOUR BEAUTY</h2>
+          <p class="mb-4 px-5">
+            Practice self-care with Salma Hayek—co-creator of our most
+            dependable products for health and wellness.
+          </p>
+          <button
+            class="btn btn-success mb-4"
+            style="background-color: #bacc5e; font-size: 20px"
+          >
+            The Nutritionist's Corner
+          </button>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="scroll-container w-100 pb-5">
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Slogan-1 -->
+    <h2 class="slogan-container">Slogan 1</h2>
+    <div class="slogan overflow-hidden">
+      <div class="row align-items-center">
+        <!-- Left Section: Image -->
+        <div class="col-lg-6 text-center text-lg-start salgon-img">
+          <img
+            src="../../assets/images/salgon.png"
+            alt="Woman Image"
+            class="img-fluid"
+          />
+        </div>
+
+        <!-- Right Section: Text and Cards -->
+        <div class="col-lg-6 justify-content-center" align="middle">
+          <h2 class="mb-3 pt-5">DRINK YOUR BEAUTY</h2>
+          <p class="mb-4 px-5">
+            Practice self-care with Salma Hayek—co-creator of our most
+            dependable products for health and wellness.
+          </p>
+          <button
+            class="btn btn-success mb-4"
+            style="background-color: #bacc5e; font-size: 20px"
+          >
+            The Nutritionist's Corner
+          </button>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="scroll-container w-100 pb-5">
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Slogan-2 -->
+    <h2 class="slogan-container">Slogan 2</h2>
+    <div class="slogan overflow-hidden">
+      <div class="row align-items-center">
+        <!-- Left Section: Image -->
+        <div class="col-lg-6 text-center text-lg-start salgon-img">
+          <img
+            src="../../assets/images/salgon.png"
+            alt="Woman Image"
+            class="img-fluid"
+          />
+        </div>
+
+        <!-- Right Section: Text and Cards -->
+        <div class="col-lg-6 justify-content-center" align="middle">
+          <h2 class="mb-3 pt-5">DRINK YOUR BEAUTY</h2>
+          <p class="mb-4 px-5">
+            Practice self-care with Salma Hayek—co-creator of our most
+            dependable products for health and wellness.
+          </p>
+          <button
+            class="btn btn-success mb-4"
+            style="background-color: #bacc5e; font-size: 20px"
+          >
+            The Nutritionist's Corner
+          </button>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="scroll-container w-100 pb-5">
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4">
+                <div data-include="../../components/_salgon.html"></div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Slogan-3 -->
+    <h2 class="slogan-container">Slogan 3</h2>
+
+    <div class="m-0 p-0 overflow-hidden slogan-3">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 text-center p-5">
+          <div class="row d-flex align-items-center">
+            <h2 class="title fw-bold text-center">
+              JUICE,<br />
+              REINVENTED.
+            </h2>
+          </div>
+
+          <p class="text-black">
+            We’re changing how you drink juice with products that cleanse,
+            nourish, and revitalize your body in exciting new ways. Sip your way
+            to your wellness goals and bring your juice wherever life takes you.
+          </p>
+          <br />
+          <button class="btn btn-slogan-3">Shop Activated Nutrition</button>
+        </div>
+        <div class="col-lg-6 col-md-6 image-section text-center">
+          <img
+            src="../../assets/images/home/slogan-3.png"
+            alt="Juice Product"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+    <div class="testimonial-container">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-offset-2 col-md-8">
+            <div id="testimonial-slider" class="owl-carousel">
+              <div class="testimonial">
+                <p class="description">
+                  If you've ever been to a Juice Generation, they have this
+                  smoothie called Mr. Greengenes. It's filled with mango, kale
+                  and all kinds of good stuff that leaves you feeling energized!
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus molestie, justo nec convallis sollicitudin, sapien
+                  lorem dictum lacus,consectetur adipiscing elit.
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <p class="description">
+                  If you've ever been to a Juice Generation, they have this
+                  smoothie called Mr. Greengenes. It's filled with mango, kale
+                  and all kinds of good stuff that leaves you feeling energized!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section  -->
+    <div data-include="../../components/_top_footer.html"></div>
+    <div data-include="../../components/_footer.html"></div>
+
+    <!-- Script  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <!-- Header Menu  -->
+    <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../../assets/js/jquery.slicknav.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <!-- testimonial  js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+    <script src="../../assets/js/testimonial.js"></script>
+
+    <!-- Video in Hero Area  -->
+    <script src="../../assets/js/video_hero_area.js"></script>
+  </body>
+</html>

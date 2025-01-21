@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peanut Butter Split</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Image Section (4 Columns) -->
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/300x400" alt="Peanut Butter Split" class="img-fluid rounded mb-3">
+        <div>
+          <button class="btn btn-light">◀</button>
+          <button class="btn btn-light">▶</button>
+          <button class="btn btn-primary ms-2">Video</button>
+        </div>
+      </div>
+      
+      <!-- Peanut Butter Section (8 Columns) -->
+      <div class="col-md-8">
+        <div class="row">
+          <!-- Nutrition Section (3 Columns) -->
+          <div class="col-md-3">
+            <h5 class="mb-3">Nutrition Facts</h5>
+            <img src="https://via.placeholder.com/150x250" alt="Nutrition Table" class="img-fluid mb-3">
+            <p>Ingredients: Plant milk, peanut butter, banana, frozen coconut milk.</p>
+            <a href="#" class="text-primary">Notice about our Product Information</a>
+          </div>
+
+          <!-- Product Quantity and Pricing Section (5 Columns) -->
+          <div class="col-md-5">
+            <h3 class="mb-3">Peanut Butter Split</h3>
+            <p>Ref. 0145</p>
+            <div class="mb-3">
+              <span>⭐⭐⭐⭐⭐</span> <small>(77 reviews)</small>
+            </div>
+            <p class="price-section">
+              <strong>Price per KG: </strong><span>4,99€</span><br>
+              <strong>Total: </strong><span>4,99€</span>
+            </p>
+
+            <!-- Amount Section -->
+            <div class="border p-3 mb-3">
+              <label for="amount" class="form-label">Amount</label>
+              <div class="d-flex align-items-center mb-3">
+                <button class="btn btn-outline-secondary">-</button>
+                <input type="number" id="amount" class="form-control mx-2 text-center" value="250" style="width: 80px;">
+                <button class="btn btn-outline-secondary">+</button>
+              </div>
+              <div class="d-flex gap-2 mb-3">
+                <button class="btn btn-outline-primary">100 g</button>
+                <button class="btn btn-outline-primary active">250 g</button>
+                <button class="btn btn-outline-primary">500 g</button>
+                <button class="btn btn-outline-primary">750 g</button>
+                <button class="btn btn-outline-primary">1 kg</button>
+              </div>
+
+              <!-- Maturation State -->
+              <label for="maturation" class="form-label">Maturation State</label>
+              <select id="maturation" class="form-select mb-3">
+                <option>Normal</option>
+                <option>Extra Mature</option>
+                <option>Ripe</option>
+              </select>
+              <textarea class="form-control mb-3" placeholder="Describe your comment here..."></textarea>
+            </div>
+
+            <!-- Allergy Information -->
+            <p class="text-muted small">
+              <strong>Allergy concerns?</strong> For your safety, please be aware that we prepare products containing nuts. Our store locations may contain or come into contact with peanuts, tree nuts, or other fruits and juices.
+            </p>
+            <button class="btn btn-success btn-lg w-100">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

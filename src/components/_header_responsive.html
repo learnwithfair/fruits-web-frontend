@@ -1,0 +1,245 @@
+Header Menu
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+
+<!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css" /> -->
+
+<link rel="stylesheet" href="../assets/css/slicknav.min.css" />
+<link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="stylesheet" href="../assets/css/responsive.css" />
+
+<headers>
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="logo-title">
+      <a href="/src/screen/home/index.html">
+        <img src="../../assets/logo/logo.png" alt="Logo" class="logo" />
+      </a>
+      <span class="title">THE FRUITS OF THE WORLD</span>
+    </div>
+    <div class="search-box d-none d-xl-inline">
+      <input type="text" class="form-control" placeholder="Search here" />
+      <span class="search-icon"><i class="fas fa-search"></i></span>
+      <span class="same-day-delivery"><a href="#">Same day delivery</a></span>
+    </div>
+    <div class="header-icons d-none d-md-inline">
+      <span class="d-xl-none search-switch"><i class="fas fa-search"></i></span>
+      <span><i class="fas fa-globe"></i> ENG</span>
+      <span class="d-md-none"><i class="fas fa-heart"></i> </span>
+      <span id="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+ <span><a href="/src/screen/auth/login.html"><i class="fa-regular fa-user"></i></a></span>
+      <button class="button d-none d-xl-inline">Order Ahead</button>
+    </div>
+  </div>
+
+  <!-- Bottom Header -->
+  <!-- Offcanvas Menu Begin -->
+  <div class="offcanvas-menu-overlay"></div>
+  <div class="offcanvas-menu-wrapper" style="top: 0px">
+    <div class="offcanvas__option">
+      <div class="offcanvas__links">
+        <a href="#">Sign in</a>
+        <a href="#">FAQs</a>
+        <a href="#">Terms</a>
+      </div>
+      <!-- <div class="offcanvas__top__hover">
+        <span>Usd <i class="arrow_carrot-down"></i></span>
+        <ul>
+          <li>USD</li>
+          <li>EUR</li>
+          <li>USD</li>
+        </ul>
+      </div> -->
+    </div>
+    <div class="offcanvas__nav__option">
+      <a href="#" class="search-switch"
+        ><img src="../../assets/icons/search.png" alt=""
+      /></a>
+      <a href="#"><img src="../../assets/icons/heart.png" alt="" /></a>
+      <a href="#"
+        ><img src="../../assets/icons/cart.png" alt="" /> <span></span
+      ></a>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+  </div>
+  <!-- Offcanvas Menu End -->
+
+  <!-- Header Section Begin -->
+  <header class="header mt-3">
+    <div class="custom-container py-2 py-md-0">
+      <div class="row d-flex align-items-center justify-content-between">
+        <!-- <div class="col-lg-3 col-md-3">
+          <div class="header__logo">
+            <a href="./index.html"
+              ><img src="../assets/logo/footer-logo.png" alt=""
+            /></a>
+          </div>
+        </div> -->
+        <div class="col-lg-7 col-md-8 d-flex start-0 align-items-center">
+          <nav class="header__menu mobile-menu">
+            <ul>
+              <li class="active nav-item">
+                <a href="/src/screen/company/company.html" class="nav-link">Company</a>
+              </li>
+              <li class="nav-item">
+                <a href="/src/screen/products/products.html" class="nav-link"
+                  >Products</a
+                >
+              </li>
+                </li>
+                 <li class="nav-item">
+                <a href="/src/screen/shop/shop_all.html" class="nav-link"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/src/screen/menu/menu.html" class="nav-link"
+                  >Menu</a
+                >
+            
+              
+              <li class="nav-item">
+                <a href="/src/screen/location/location.html" class="nav-link">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a href="/src/screen/contact/contact.html" class="nav-link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="customer-service">
+            Customer Service<br /><span>
+              <b><a href="tel:+01234566778">+01234566778</a></b>
+            </span>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-1 d-flex justify-content-end align-items-end"
+        >
+          <div class="my-list d-none d-md-inline">
+            <a href="#">
+              <img src="../../assets/icons/heart.png" alt="" srcset=""
+            /></a>
+            <!-- <i class="fa fa-heart-o"></i> -->
+            <span class="d-none d-xl-inline">My List</span>
+          </div>
+        </div>
+      </div>
+      <div class="canvas__open mt-2"><i class="fa fa-bars"></i></div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+</headers>
+
+<!-- Search Begin -->
+<div class="search-model">
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="search-close-switch">+</div>
+    <form class="search-model-form">
+      <input type="text" id="search-input" placeholder="Search here....." />
+    </form>
+  </div>
+</div>
+<!-- Search End -->
+
+<!-- Cart  -->
+<div id="cart-widget" class="cart-widget" style="display: none">
+  <!-- Cart Header -->
+  <div class="cart-header">
+    <h4>Your Order (1)</h4>
+    <span class="close-btn">&times;</span>
+  </div>
+  <div class="cart-body">
+    <!-- Cart Item -->
+    <div class="row cart-item gap-3">
+      <div class="col-5 item-details">
+        <h5>Hail to Kale</h5>
+
+        <p class="mt-2">12 Oz<br />Remove Lemon<br />+3 more choices</p>
+      </div>
+      <!-- <div class="item-price"> -->
+      <div class="col-4 custom-button">
+        <!-- <div class="icon">
+                <i class="fas fa-trash-alt"></i>
+              </div> -->
+        <button class="plus-button p-1 px-2" onclick="decreaseQuantity(this)">
+          <i class="fas fa-minus"></i>
+        </button>
+
+        <input
+          type="text"
+          class="quantity-input form-control"
+          value="1"
+          min="1"
+        />
+        <button class="plus-button p-1 px-2" onclick="increaseQuantity(this)">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="col-3 d-flex justify-content-end align-items-end">
+        <button class="btn button p-1 px-2">
+          8,95 €
+          <span class="text-danger ps-1" style="font-size: 16px">X</span>
+        </button>
+      </div>
+
+      <!-- </div> -->
+    </div>
+
+    <!-- Suggest Section -->
+    <div class="suggest-section">
+      <h6>We may suggest you</h6>
+      <div class="row mt-3">
+        <div class="col-6 col-md-4">
+          <div
+            data-include="../../components/_suggested_product_cart.html"
+          ></div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div
+            data-include="../../components/_suggested_product_cart.html"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary-section">
+      <div>
+        <p>Sub Total</p>
+        <p>Tax</p>
+      </div>
+      <div class="text-end">
+        <a href="#">
+          <button class="btn checkout-btn p-1">8,95 €</button>
+        </a>
+        <a href="#">
+          <button class="btn checkout-btn p-1">0 €</button>
+        </a>
+
+        <!-- <button>0 €</button> -->
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="checkout-btn py-1">Checkout (8,95 €) &rarr;</button>
+    <button class="add-product-btn py-1">Add more product &rarr;</button>
+  </div>
+</div>
+<!-- /Cart  -->
+
+<!-- Header Menu  -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<!-- <script src="../../assets/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/jquery.slicknav.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/script.js"></script>

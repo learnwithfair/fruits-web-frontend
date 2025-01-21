@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits || Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+    <!-- For Header  -->
+    <link rel="stylesheet" href="../../assets/css/slicknav.min.css" />
+    <!-- /For Header  -->
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style2.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+
+    <!-- testimonial css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="../../assets/css/testimonial.css" />
+
+
+
+    <style>h3, h5 {
+        color: #333;
+      }
+      
+      .text-warning {
+        font-size: 1rem;
+      }
+      
+      .image-container img {
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn-outline-secondary.active {
+        background-color: #BACC5E;
+        color: #fff;
+        border-color: #BACC5E;
+      }
+      
+      textarea {
+        resize: none;
+      }
+      
+      textarea:focus, select:focus {
+        outline: none;
+        border-color: #BACC5E;
+        box-shadow: 0 0 5px rgba(186, 204, 94, 0.5);
+      }
+      
+      .btn-success:hover {
+        background-color: #aab755;
+      }</style>
+    <!-- For Include HTML Page  -->
+    <script src="../../assets/js/dynamic_load.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <!-- Header Section  -->
+    <div data-include="../../components/_header.html"></div>
+
+    <!-- Hero area  -->
+    <div data-include="components/_hero_area.html"></div>
+
+    <!-- hero area end  -->
+
+    <!--GrandFather Tab Area Start -->
+    <div class="row d-none d-lg-block">
+        <nav class="d-flex justify-content-center navbar navbar-expand-lg navbar-custom-tab custom-container">
+            <div class="ms-3">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-tab mx-auto g-1">
+                        <li class="nav-item">
+                            <a class="nav-link-grand active">Fruits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-grand">Vegetables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-grand">Appetizers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-grand">Spices & Aromatics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-grand">Pastries, Eggs & Dairy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-grand">Products of the World</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-grand">Healthy Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /GrandFather Tab Area  End-->
+    <!--Father Tab Area Start -->
+    <div class="row d-none d-lg-block" id="father-category">
+        <nav class="d-flex justify-content-center navbar navbar-expand-lg  navbar-custom-tab custom-container"
+            style="background-color: #ADC534;">
+            <div class="ms-3">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav navbar-nav-tab">
+                        <li class="nav-item">
+                            <a class="nav-link-father active">Fresh Juices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-father">Juice Farmacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-father">Smoothies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-father">Açaí Bowls</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-father">Bottled +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-father">SuperFoods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-father">Juiced Gelato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /Father Tab Area  End-->
+    <!--Son Tab Area Start -->
+    <div class="row mb-5" id="son-category" style="display: none;">
+        <nav class="d-flex justify-content-center navbar navbar-expand-lg navbar-custom-tab custom-container"
+            style="background-color: #7D9405;">
+            <div class="ms-3">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-tab">
+                        <li class="nav-item">
+                            <a class="nav-link-son active">Cold Pressed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-son">Juice For A Day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-son">Juice Farmacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-son">Shots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-son">Energy Kick</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-son">The Waters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-son">Chilled Soup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /Son Tab Area  End-->
+
+    <!-- filter area start  -->
+    <div class="row mt-5 d-flex justify-content-center justify-content-lg-end align-items-center mb-4">
+       
+        <div class="col-12 preferences m-3 d-flex justify-content-center">
+            <span class="text-20">Preferences</span>
+            <i class="preferences-btn fa-solid fa-filter"></i>
+        </div>
+        <div class="col-12 preferences m-3 d-flex justify-content-center">
+            <label for="sort" class="mb-0 text-20">Sort:</label>
+            <select id="sort" class="form-select w-auto">
+                <option value="most-requested">Most requested</option>
+                <option value="price-low-to-high">Price: Low to High</option>
+                <option value="price-high-to-low">Price: High to Low</option>
+            </select>
+        </div>
+    </div>
+    </div>
+    <!-- filter area end  -->
+
+    <!-- menu area start  -->
+    <div class="container mt-4 mb-5 menu-container">
+        <div class="row" id="menu-container">
+            <!-- Strawberry Juice -->
+            <div class="col-md-3">
+                <div class="menu-card">
+                    <img src="../../assets/images/menu/image1.png" class="card-img-top mb-3" alt="Strawberry Juice">
+                    <div class="card-body text-center">
+                        <h6 class="menu-card-title">Strawberry Juice</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Orange Juice -->
+            <div class="col-md-3">
+                <div class="menu-card">
+                    <img src="../../assets/images/menu/image2.png" class="card-img-top mb-3" alt="Orange Juice">
+                    <div class="card-body text-center">
+                        <h6 class="menu-card-title">Fresh Squeezed Orange Juice</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Celery Juice -->
+            <div class="col-md-3">
+                <div class="menu-card">
+                    <img src="../../assets/images/menu/image3.png" class="card-img-top mb-3" alt="Celery Juice">
+                    <div class="card-body text-center">
+                        <h6 class="menu-card-title">Celery Juice</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Pineapple Ginger Juice -->
+            <div class="col-md-3">
+                <div class="menu-card">
+                    <img src="../../assets/images/menu/image4.png" class="card-img-top mb-3"
+                        alt="Pineapple Ginger Juice">
+                    <div class="card-body text-center">
+                        <h6 class="menu-card-title">Pineapple Ginger Juice</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu area end  -->
+    <!-- product details modal start -->
+    <div class="row my-5 menu-product-details" id="menu-product-details" style="display: none;border: 1 px;">
+       
+        <!-- Image Section (4 Columns) -->
+        <div class="col-md-4">
+          <img src="../../assets/images/menu/product_details.png" alt="Peanut Butter Split" class="img-fluid rounded mb-3">
+          <div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-light mx-3"> <i class="fa-solid fa-angle-left"></i> </button>
+                <button class="btn btn-light mx-3"> <i class="fa-solid fa-angle-right"></i> </button>
+            </div>
+            <div class="mt-3 d-flex justify-content-center">
+                <a href="#" class="menu-video">Video</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Peanut Butter Section (8 Columns) -->
+      
+        <div class="col-md-8">
+            <h3 class="mb-3 menu-details-title">Peanut Butter Split</h3>
+           
+          <div class="row">
+            <!-- Nutrition Section (3 Columns) -->
+            <div class="col-md-5">
+                <h6>Ref. 0145</h6>
+                <div class="mb-3">
+                    <span style="font-size: 1.5rem; color: black;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <small>(77 reviews)</small>
+                </div>
+                <p class="price-section">
+                  <span>6 und. (0.8 kg - 1.0 kg) </span><br>
+                  <strong></strong><h1>4,99€</h1>
+                </p>
+    
+              <img src="../../assets/images/menu/nutritians.png" alt="Nutrition Table" class="img-fluid mb-3">
+              <p>Ingredients: Plant milk, peanut butter, banana, frozen coconut milk.</p>
+              <a href="#" >Notice about our <span style="color:#BACC5E">Product Information</span></a>
+            </div>
+  
+            <!-- Product Quantity and Pricing Section (5 Columns) -->
+            <div class="col-md-7">
+                <!-- Price Section -->
+                <div class="text-center mb-3 p-3  d-flex justify-content-end" >
+                    <div class="menu-price"> 
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="mb-1" >Price per KG</span>
+                             <span class="mb-1" >4,99€</span>
+                          </div>
+                          <hr class="bg-light">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="mb-1" >Total</span>
+                             <span class="mb-1" >4,99€</span>
+                          </div>
+                    </div>
+                 
+                </div>
+              
+                <!-- Amount Section -->
+                <div class="border p-3 mb-3">
+                  <div class="d-flex justify-content-start gap-4 align-items-center mb-3">
+                    <h4 class="mb-0 fw-bold menu-amount-link active">Grams</h4>
+                    <h4 class="mb-0 fw-bold menu-amount-link">Units</h4>
+                  </div>
+                  <div class="mt-5 mb-3 d-flex justify-content-center">
+                    <h3 for="amount" class="form-label fw-bold">Amount</h3>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <button class="btn" style="font-size: 20px;padding: 10px 20px; background-color: #BACC5E; color: white;border-radius: 0%;" id="menu-minus"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" id="amount" class="form-control text-center" value="250 g" style="width: 100%;border:1px solid #BACC5E;border-radius: 0%; font-weight: bolder;height: 50px;">
+                    <button class="btn btn-outline-secondary" style="font-size: 20px;padding: 10px 20px; background-color: #BACC5E; color: white;border-radius: 0%;" id="menu-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                  <div id="menu-gram-container" style="display: block;">
+                    <div class="d-flex justify-content-center gap-3 mb-3 menu-amount">
+                        <a class="menu-amount-btn">100 gm</a>
+                        <a class="menu-amount-btn">250 gm</a>
+                        <a class="menu-amount-btn">500 gm</a>     
+                      </div>
+                      <div class="d-flex justify-content-center gap-3 mb-5 menu-amount">                   
+                        <a class="menu-amount-btn">750 gm</a>
+                        <a class="menu-amount-btn">1 kg </a>
+                        <a class="menu-amount-btn">2 kg </a> 
+                      </div>
+                  </div>
+                  <div id="menu-unit-container" style="display: none;">
+                    <div class="d-flex justify-content-center gap-3 mb-3 menu-amount">
+                        <a class="menu-amount-btn">1</a>
+                        <a class="menu-amount-btn">5</a>
+                        <a class="menu-amount-btn">10</a>     
+                      </div>
+                      <div class="d-flex justify-content-center gap-3 mb-5 menu-amount">                   
+                        <a class="menu-amount-btn">50</a>
+                        <a class="menu-amount-btn">100</a>
+                        <a class="menu-amount-btn">500</a> 
+                      </div>
+                  </div>
+              
+                  <!-- Maturation State -->
+                  <label for="maturation" class="form-label">Maturation State</label>
+                  <select id="maturation" class="form-select mb-3" style="border: 1px solid #525252;height: 50px;border-radius: 10px;">
+                    <option>Normal</option>
+                    <option>Extra Mature</option>
+                    <option>Ripe</option>
+                  </select>
+                  <textarea class="form-control mb-3"  style="border: 1px solid #525252;height: 100px;border-radius: 10px;" placeholder="Describe your comment here..."></textarea>
+                </div>
+              
+                <!-- Allergy Information -->
+                <p class="text-muted small">
+                  <strong>Allergy concerns?</strong> For your safety, please be aware that we prepare products containing nuts. Our store locations may contain or come into contact with peanuts, tree nuts, or other fruits and juices.
+                </p>
+                <div class="d-flex justify-content-around">
+                   <button> <img src="../../assets/icons/Vector.png" alt=""></button>
+                    <button class="btn btn-success btn-lg w-75" style="background-color: #BACC5E; border-color: #BACC5E;">Order Now</button>
+                </div>
+              </div>
+              
+          </div>
+          <div id="cross">
+            <button> <i class="fa-solid fa-x"></i></button>
+         </div>
+        </div>
+      </div>
+    <!-- product details modal end -->
+
+ 
+    
+    <!-- Footer Section  -->
+    <div data-include="../../components/_top_footer.html"></div>
+    <div data-include="../../components/_footer.html"></div>
+
+    <!-- Script  -->
+    <script src="../../assets/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <!-- Header Menu  -->
+    <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../../assets/js/jquery.slicknav.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <!-- testimonial  js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="../../assets/js/testimonial.js"></script>
+
+    <!-- Video in Hero Area  -->
+    <script src="../../assets/js/video_hero_area.js"></script>
+    <!-- menu js  -->
+   
+
+</body>
+
+</html>

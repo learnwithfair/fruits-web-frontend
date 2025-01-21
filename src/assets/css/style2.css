@@ -1,0 +1,240 @@
+.hero-section {
+  height: 50vh;
+  background-image: url("../images/products/banner.png");
+  /* Replace with your image URL */
+  background-size: 100% 100%;
+  /* Stretches to fill both width and height */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Avoids repeating */
+}
+
+.hero-content {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.title-text {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.banner-btn {
+  background-color: #bacc5e;
+  width: 100%;
+  padding: 5px 80px;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.banner-btn:hover {
+  background-color: #a9b958;
+  color: white;
+}
+
+/* menu style start */
+.menu-tab {
+  color: #525252;
+}
+
+.menu-card {
+  cursor: pointer;
+}
+
+.menu-card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* menu tab style  */
+.navbar-custom-tab .navbar-nav-tab {
+  gap: 20px;
+}
+
+/* grand tab style  */
+.navbar-nav-tab .nav-link-grand {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  /* margin-right: 30px; */
+}
+
+/* father tab style  */
+.navbar-nav-tab .nav-link-father {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  /* margin-right: 30px; */
+}
+
+.navbar-nav-tab .nav-link-son {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  /* margin-right: 30px; */
+}
+
+/* Add this CSS to define the underline effect for the active link */
+
+/* grand underline effect  */
+.nav-link-grand {
+  cursor: pointer;
+  position: relative;
+  /* Required for positioning the ::after pseudo-element */
+  text-decoration: none;
+  /* Remove default underline */
+  color: inherit;
+  /* Keep default text color */
+}
+
+/* Underline effect for the active link */
+.nav-link-grand.active::after {
+  content: "";
+  /* Creates the underline */
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  /* 5px below the text */
+  width: 90%;
+  /* Full width of the link */
+  height: 3px;
+  /* Thickness of the underline */
+  background-color: #333333;
+  /* Color of the underline */
+}
+
+/* father underline effect  */
+.nav-link-father {
+  cursor: pointer;
+  position: relative;
+  /* Required for positioning the ::after pseudo-element */
+  text-decoration: none;
+  /* Remove default underline */
+  color: inherit;
+  /* Keep default text color */
+}
+
+/* Underline effect for the active link */
+.nav-link-father.active::after {
+  content: "";
+  /* Creates the underline */
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  /* 5px below the text */
+  width: 90%;
+  /* Full width of the link */
+  height: 3px;
+  /* Thickness of the underline */
+  background-color: #333333;
+  /* Color of the underline */
+}
+
+/* son underline effect  */
+.nav-link-son {
+  cursor: pointer;
+  position: relative;
+  /* Required for positioning the ::after pseudo-element */
+  text-decoration: none;
+  /* Remove default underline */
+  color: inherit;
+  /* Keep default text color */
+}
+
+/* Underline effect for the active link */
+.nav-link-son.active::after {
+  content: "";
+  /* Creates the underline */
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  /* 5px below the text */
+  width: 90%;
+  /* Full width of the link */
+  height: 3px;
+  /* Thickness of the underline */
+  background-color: #333333;
+  /* Color of the underline */
+}
+
+/* product details for menu page start  */
+.menu-product-details {
+  position: relative;
+}
+
+#cross {
+  position: absolute;
+  top: 10px; /* Add 'px' to specify the unit */
+  right: 10px; /* Add 'px' to specify the unit */
+}
+.menu-video {
+  border: 1px solid #525252;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  width: 60%;
+  text-align: center;
+  border-radius: 10px;
+}
+.menu-details-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #bacc5e;
+  margin: 20px 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bacc5e;
+}
+.menu-price {
+  background-color: #bacc5e;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 70%;
+}
+.menu-price span {
+  color: white;
+  font-size: 28px;
+}
+.menu-amount a {
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+}
+/* product details for menu page end */
+/* coditional detain view  */
+.menu-amount-link {
+  cursor: pointer;
+  position: relative;
+  /* Required for positioning the ::after pseudo-element */
+  text-decoration: none;
+  /* Remove default underline */
+  color: inherit;
+  /* Keep default text color */
+}
+
+/* Underline effect for the active link */
+.menu-amount-link.active::after {
+  content: "";
+  /* Creates the underline */
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  /* 5px below the text */
+  width: 90%;
+  /* Full width of the link */
+  height: 3px;
+  /* Thickness of the underline */
+  background-color: #333333;
+  /* Color of the underline */
+}
+.menu-amount-btn {
+  cursor: pointer;
+}
+/*menu style end */
